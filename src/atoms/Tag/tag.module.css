@@ -1,0 +1,10 @@
+.button {
+  background: none;
+  border: 2px solid black;
+  border-radius: var(--border-radius-m);
+}
+
+.button:hover {
+  cursor: pointer;
+  background: rgb(180, 180, 180);
+}

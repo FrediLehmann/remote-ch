@@ -1,0 +1,5 @@
+.span {
+  margin-left: auto;
+  position: relative;
+  font-size: var(--font-size-s);
+}

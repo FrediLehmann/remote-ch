@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "jsx": "preserve",
+    "strictFunctionTypes": true,
+    "sourceMap": true,
+    "baseUrl": "src",
+    "paths": {
+      "components/*": ["components/*"],
+      "atoms/*": ["atoms/*"]
+    },
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

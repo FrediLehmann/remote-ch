@@ -1,0 +1,45 @@
+/* Variables */
+:root {
+  /* Breakpoints inspried by tailwindcss defaults */
+  --screen-s: 640px;
+  /* => @media (min-width: 640px) { ... } */
+  --screen-md: 768px;
+  /* => @media (min-width: 768px) { ... } */
+  --screen-l: 1024px;
+  /* => @media (min-width: 1024px) { ... } */
+  --screen-xl: 1280px;
+  /* => @media (min-width: 1280px) { ... } */
+
+  --spacing-zero: 0;
+  --spacing-one: 1px;
+  --spacing-xs: 0.25rem;
+  --spacing-s: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-l: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 2.5rem;
+
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray-50: #8c8c8c;
+
+  --font-size-s: 12px;
+  --font-size-md: 14px;
+  --font-size-l: 16px;
+
+  --border-radius-s: 2px;
+  --border-radius-m: 4px;
+}
+
+#root {
+  display: grid;
+  grid-template-columns:
+    auto
+    max-content
+    auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header header header'
+    '. content .';
+  grid-gap: var(--spacing-s);
+}
