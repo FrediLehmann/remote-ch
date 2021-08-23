@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 
-import styles from './image.module.css'
+import styles from "./image.module.css"
 
 interface ImageProps {
   alt: string
@@ -9,7 +9,7 @@ interface ImageProps {
 
 const Image = ({ alt, src }: ImageProps): JSX.Element => (
   <picture>
-    <img className={styles.img} alt={alt} src={src} loading='lazy' />
+    <img className={styles.img} alt={alt} src={src} loading="lazy" />
   </picture>
 )
 

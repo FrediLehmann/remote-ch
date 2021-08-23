@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 
-import { Content, Header } from './components'
+import { Content, Header } from "./components"
 
 function App(): JSX.Element {
   return (

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react"
 
-import { Tag } from 'atoms'
+import { Tag } from "atoms"
 
-import styles from './tagsSection.module.css'
+import styles from "./tagsSection.module.css"
 
 interface TagsSectionProps {
   tags: string[]

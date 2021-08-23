@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 
-import { Image, TitleSection, TagsSection } from './components'
-import styles from './job.module.css'
+import { Image, TitleSection, TagsSection } from "./components"
+import styles from "./job.module.css"
 
 interface JobProps {
   id: string

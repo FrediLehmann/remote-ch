@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 
-import styles from './header.module.css'
+import styles from "./header.module.css"
 
 const Header = (): JSX.Element => (
   <header className={styles.header}>

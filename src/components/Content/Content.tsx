@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react"
 
-import { jobs as jobs_mock } from './__mock__/data'
-import { SourceLink, Job } from './components'
+import { jobs as jobs_mock } from "./__mock__/data"
+import { SourceLink, Job } from "./components"
 
-import styles from './content.module.css'
+import styles from "./content.module.css"
 
 const Content = (): JSX.Element => {
   const [jobs, setJobs] = useState([])

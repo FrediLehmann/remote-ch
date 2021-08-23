@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 
-import styles from './titleSection.module.css'
+import styles from "./titleSection.module.css"
 
 interface TitleSectionProps {
   company: string

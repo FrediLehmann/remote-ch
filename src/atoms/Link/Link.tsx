@@ -1,7 +1,7 @@
-import React from 'react'
-import { HiExternalLink } from 'react-icons/hi'
+import React from "react"
+import { HiExternalLink } from "react-icons/hi"
 
-import styles from './link.module.css'
+import styles from "./link.module.css"
 
 interface LinkProps {
   href: string
@@ -25,7 +25,7 @@ const Link = ({
     data-external={external}
     href={href}
     hrefLang={hreflang}
-    rel={rel || (external && 'external')}
+    rel={rel || (external && "external")}
     target={target}>
     {children}
     {external && <HiExternalLink className={styles.svg} />}
