@@ -20,20 +20,20 @@ interface JobProps {
 }
 
 const Job = ({
-  id,
-  slug,
-  epoch,
-  date,
+  //   id,
+  //   slug,
+  //   epoch,
+  //   date,
   company,
   company_logo,
   position,
-  description,
-  tags,
-  logo,
-  location,
-  url,
-  apply_url
-}: JobProps): JSX.Element => (
+  //   description,
+  tags
+}: //   logo,
+//   location,
+//   url,
+//   apply_url
+JobProps): JSX.Element => (
   <article className={styles.article}>
     <Image alt={company} src={company_logo} />
     <TitleSection company={company} position={position} />

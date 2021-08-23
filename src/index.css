@@ -29,6 +29,8 @@
 
   --border-radius-s: 2px;
   --border-radius-m: 4px;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #root {
@@ -39,7 +41,7 @@
     auto;
   grid-template-rows: auto;
   grid-template-areas:
-    'header header header'
-    '. content .';
+    "header header header"
+    ". content .";
   grid-gap: var(--spacing-s);
 }

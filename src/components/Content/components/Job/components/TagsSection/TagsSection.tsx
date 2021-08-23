@@ -10,8 +10,8 @@ interface TagsSectionProps {
 
 const TagsSection = ({ tags }: TagsSectionProps): JSX.Element => (
   <div className={styles.div}>
-    {tags.map(tag => (
-      <Tag key={tag}>{tag}</Tag>
+    {tags.map((tag, index) => (
+      <Tag key={index}>{tag}</Tag>
     ))}
   </div>
 )

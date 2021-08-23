@@ -6,8 +6,10 @@ interface TagProps {
   children: string
 }
 
-const Tag = ({ children }: TagProps): JSX.Element => (
-  <button className={styles.button}>{children}</button>
+const Tag = ({ children, ...bulk }: TagProps): JSX.Element => (
+  <button className={styles.button} {...bulk}>
+    {children}
+  </button>
 )
 
 export default Tag
