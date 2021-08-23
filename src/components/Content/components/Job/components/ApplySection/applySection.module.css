@@ -4,6 +4,7 @@
   background-color: var(--color-black);
   padding: var(--spacing-s) var(--spacing-md);
   border-radius: var(--border-radius-m);
+  margin-left: var(--spacing-l);
 }
 
 /* mouse over link */
