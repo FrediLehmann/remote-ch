@@ -8,7 +8,7 @@ interface ImageProps {
 }
 
 const Image = ({ alt, src }: ImageProps): JSX.Element => (
-  <picture>
+  <picture className={styles.picture}>
     <img className={styles.img} alt={alt} src={src} loading="lazy" />
   </picture>
 )
