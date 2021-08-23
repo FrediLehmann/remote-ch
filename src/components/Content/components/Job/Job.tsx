@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Image, TitleSection, TagsSection } from "./components"
+import { ApplySection, Image, TitleSection, TagsSection } from "./components"
 import styles from "./job.module.css"
 
 interface JobProps {
@@ -28,7 +28,8 @@ const Job = ({
   company_logo,
   position,
   //   description,
-  tags
+  tags,
+  apply_url
 }: //   logo,
 //   location,
 //   url,
@@ -38,6 +39,7 @@ JobProps): JSX.Element => (
     <Image alt={company} src={company_logo} />
     <TitleSection company={company} position={position} />
     <TagsSection tags={tags} />
+    <ApplySection applyUrl={apply_url} />
   </article>
 )
 

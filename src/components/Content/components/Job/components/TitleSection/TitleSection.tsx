@@ -11,7 +11,7 @@ const TitleSection = ({
   company,
   position
 }: TitleSectionProps): JSX.Element => (
-  <div>
+  <div className={styles.div}>
     <h3 className={styles.h2}>{company}</h3>
     <h2 className={styles.h2}>{position}</h2>
   </div>

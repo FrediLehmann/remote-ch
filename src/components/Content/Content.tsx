@@ -11,7 +11,7 @@ const Content = (): JSX.Element => {
   useEffect(() => {
     const fetchJobs = async () => {
       // Request
-      // const jobs = await (await fetch('https://remoteok.io/api')).json()
+      // const jobs = await (await fetch("https://remoteok.io/api")).json()
       jobs_mock.shift()
       console.log(jobs_mock)
       setJobs(jobs_mock)
