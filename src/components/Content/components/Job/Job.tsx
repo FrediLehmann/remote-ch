@@ -29,15 +29,15 @@ const Job = ({
   position,
   //   description,
   tags,
-  apply_url
+  apply_url,
+  location
 }: //   logo,
 //   location,
 //   url,
-//   apply_url
 JobProps): JSX.Element => (
   <article className={styles.article}>
     <Image alt={company} src={company_logo} />
-    <TitleSection company={company} position={position} />
+    <TitleSection company={company} position={position} location={location} />
     <TagsSection tags={tags} />
     <ApplySection applyUrl={apply_url} />
   </article>

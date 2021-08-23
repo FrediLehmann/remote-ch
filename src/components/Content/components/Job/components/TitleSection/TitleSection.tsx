@@ -5,15 +5,18 @@ import styles from "./titleSection.module.css"
 interface TitleSectionProps {
   company: string
   position: string
+  location: string
 }
 
 const TitleSection = ({
   company,
-  position
+  position,
+  location
 }: TitleSectionProps): JSX.Element => (
   <div className={styles.div}>
-    <h3 className={styles.h2}>{company}</h3>
-    <h2 className={styles.h2}>{position}</h2>
+    <h2 className={styles.h2}>{company}</h2>
+    <h3 className={styles.h3}>{position}</h3>
+    {location && <p className={styles.p}>{location}</p>}
   </div>
 )
 

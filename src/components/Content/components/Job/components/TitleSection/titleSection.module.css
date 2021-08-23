@@ -3,9 +3,17 @@
 }
 
 .h2 {
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-md);
 }
 
 .h3 {
   font-size: var(--font-size-l);
+}
+
+.p {
+  display: inline;
+  background: rgb(197, 197, 197);
+  font-size: var(--font-size-s);
+  padding: var(--spacing-xs) var(--spacing-s);
+  border-radius: var(--border-radius-m);
 }
