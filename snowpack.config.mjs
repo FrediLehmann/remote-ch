@@ -1,23 +1,23 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
   mount: {
-    public: '/',
-    src: '/dist'
+    public: "/",
+    src: "/dist"
   },
   alias: {
-    components: './src/components',
-    atoms: './src/atoms'
+    components: "./src/components",
+    atoms: "./src/atoms"
   },
   plugins: [
-    'snowpack-plugin-relative-css-urls',
-    '@snowpack/plugin-react-refresh',
-    '@snowpack/plugin-dotenv',
+    "snowpack-plugin-relative-css-urls",
+    "@snowpack/plugin-react-refresh",
+    "@snowpack/plugin-dotenv",
     [
-      '@snowpack/plugin-run-script',
+      "@snowpack/plugin-run-script",
       {
-        cmd: 'eslint src --ext .js,.jsx,.ts,.tsx',
+        cmd: "eslint src --ext .js,.jsx,.ts,.tsx",
         // Optional: Use npm package "eslint-watch" to run on every file change
-        watch: 'esw -w --clear src --ext .js,.jsx,.ts,.tsx'
+        watch: "esw -w --clear src --ext .js,.jsx,.ts,.tsx"
       }
     ]
   ],
