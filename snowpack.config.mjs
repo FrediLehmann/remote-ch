@@ -27,9 +27,8 @@ export default {
   ],
   optimize: {
     /* Example: Bundle your final build: */
-    bundle: true,
-    minify: true,
-    target: "es2018"
+    bundle: false,
+    minify: true
   },
   packageOptions: {
     /* ... */
