@@ -12,7 +12,6 @@ export default {
     "snowpack-plugin-relative-css-urls",
     "@snowpack/plugin-react-refresh",
     "@snowpack/plugin-dotenv",
-    ["@snowpack/plugin-webpack", {}],
     [
       "@snowpack/plugin-run-script",
       {
