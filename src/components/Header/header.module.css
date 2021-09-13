@@ -16,9 +16,9 @@
 
 .h1 {
   align-self: flex-end;
-  margin-left: 25%;
+  margin-left: 16px;
 
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 42px;
 }
 
