@@ -1,10 +1,12 @@
 use serde_json::Value;
-use std::fs::File;
+use std::fs;
+use std::process::Command;
 
 const LOCATIONS: [&str; 1] = ["Worldwide"];
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    // Fetch data
     let mut response: Value = reqwest::get("https://remoteok.io/api")
         .await?
         .json::<Value>()
@@ -22,7 +24,20 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .filter(|job| LOCATIONS.contains(&job["location"].as_str().unwrap_or("")))
         .collect::<Vec<Value>>();
 
-    serde_json::to_writer(&File::create("jobs.json")?, &filtered)?;
+    serde_json::to_writer(&fs::File::create("../public/jobs.json")?, &filtered)?;
+
+    println!("{:?}", fs::canonicalize("../")?);
+
+    // Command::new("git stage")
+    //     .arg("jobs.json")
+    //     .current_dir(fs::canonicalize("../")?)
+    //     .spawn()
+    //     .unwrap();
+    // .status()
+    // .expect("Failed to stage changes");
+
+    // .spawn()
+    // .expect("Failed to stage changes");
 
     // println!("{} {}", filtered.len(), response.as_array().unwrap().len());
 
