@@ -22,7 +22,7 @@ const Content = (): JSX.Element => {
       {jobs.map(job => (
         <Job key={job.id} {...job} />
       ))}
-      {/* {jobs.length === 0 && <Loading />} */}
+      {jobs.length === 0 && <Loading />}
     </main>
   )
 }

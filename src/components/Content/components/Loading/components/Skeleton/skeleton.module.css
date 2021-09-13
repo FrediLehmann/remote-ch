@@ -1,0 +1,19 @@
+.div {
+  width: 1200px;
+  height: 120px;
+  background: rgb(235, 235, 235);
+  background: linear-gradient(
+    75deg,
+    rgb(235, 235, 235) 0%,
+    rgb(240, 240, 240) 15%,
+    rgb(235, 235, 235) 20%
+  );
+  border-radius: var(--border-radius-m);
+  animation: loading 1.5s infinite cubic-bezier(0.21, 0.53, 0.87, 0.53);
+}
+
+@keyframes loading {
+  to {
+    background-position: 1200px 0;
+  }
+}
