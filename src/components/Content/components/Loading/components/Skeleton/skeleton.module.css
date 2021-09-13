@@ -9,7 +9,7 @@
     rgb(235, 235, 235) 20%
   );
   border-radius: var(--border-radius-m);
-  animation: loading 1.5s infinite cubic-bezier(0.21, 0.53, 0.87, 0.53);
+  animation: loading 1.3s infinite cubic-bezier(0.21, 0.53, 0.87, 0.53);
 }
 
 @keyframes loading {
