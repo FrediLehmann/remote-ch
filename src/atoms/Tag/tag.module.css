@@ -2,7 +2,7 @@
   background: none;
   padding: var(--spacing-xs) var(--spacing-s);
   font-size: var(--font-size-md);
-  border: 1px solid black;
+  border: 1px solid var(--color-gray-50);
   border-radius: var(--border-radius-m);
 }
 

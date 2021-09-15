@@ -1,6 +1,6 @@
 .article {
   display: flex;
-  padding: var(--spacing-md) var(--spacing-s);
+  padding: var(--spacing-md) var(--spacing-md);
   align-items: center;
 
   border: solid 1px var(--color-gray-50);

@@ -1,7 +1,7 @@
 .a {
   text-decoration: none;
   color: var(--color-white);
-  background-color: var(--color-black);
+  background-color: var(--color-gray-90);
   padding: var(--spacing-s) var(--spacing-xl);
   border-radius: var(--border-radius-m);
   margin-left: var(--spacing-l);

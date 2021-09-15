@@ -21,6 +21,8 @@
 
   --color-white: #fff;
   --color-black: #000;
+  --color-gray-100: #1f1f1f;
+  --color-gray-90: #2f2f2f;
   --color-gray-50: #8c8c8c;
 
   --font-size-s: 12px;
@@ -44,4 +46,6 @@
     "header header header"
     ". content .";
   grid-gap: var(--spacing-s);
+
+  color: var(--color-gray-100);
 }
